@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUPORT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>EDUPORT.KE</h1>
+    </div>
+    <nav>
+        <div class="explore-container">
+            <button class="explore-btn" onclick="toggleDropdown()">Explore ▼</button>
+            <div id="exploreDropdown" class="dropdown-content">
+                <h3>Goals</h3>
+                <ul>
+                    <li><a href="#">Take a free course</a></li>
+                    <li><a href="#">Earn a Degree</a></li>
+                    <li><a href="#">Earn a Certificate</a></li>
+                    <li><a href="#">Find your new career</a></li>
+                </ul>
+                <h3>Subjects</h3>
+                <ul>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Information Technology</a></li>
+                    <li><a href="#">Language Learning</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Personal Development</a></li>
+                    <li><a href="#">Physical Science & Engineering</a></li>
+                    <li><a href="#">Social Sciences</a></li>
+                    <li><a href="#">Arts & Humanities</a></li>
+                    <li><a href="#">Math & Logic</a></li>
+                </ul>
+            </div>
+        </div>
+        <input type="text" id="search" placeholder="What do you want to learn?">
+        <button onclick="searchCourses()">🔍</button>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Our courses</h2>
+    <div class="course-list" id="courseList">
+        <div class="course-card">
+            <img src="images/google-ux-design.jpg" alt="Google UX Design">
+             <div class="course-info">
+                <h3>Google UX Design</h3>
+                <p>Professional Certificate</p>
+            </div>
+        </div>
+
+        <div class="course-card">Java Decision Programming</div>
+        <!--card styling-->
+        <div class="course-card">The Beauty of Kunqu Opera</div>
+        <div class="course-card">Meta Back-End Developer</div>
+    </div>
+    <button id="showMore" onclick="showMoreCourses()">Show more</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
+
